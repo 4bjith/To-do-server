@@ -11,7 +11,8 @@ const PORT = process.env.PORT || 8100;
 
 app.use(
     cors({
-        origin: process.env.CLIENT_ORIGIN || '*',
+        // origin: process.env.CLIENT_ORIGIN || 'http://localhost:8001',
+        origin: true,
     })
 );
 app.use(express.json());
